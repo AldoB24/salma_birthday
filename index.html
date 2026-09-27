@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fcfbf8" />
+    <meta name="description" content="Sebuah kejutan kecil, dirangkai sepenuh hati untuk hari istimewamu." />
+    <title>Satu Hari Istimewa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="is-locked">
+    <div class="site-shell" id="top">
+      <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+      <audio id="birthday-audio" src="./NCT127.mp3" autoplay preload="auto" loop></audio>
+      <div class="reading-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+      <header class="topbar" aria-label="Navigasi utama">
+        <a class="wordmark" href="#top"><span class="wordmark__mark" aria-hidden="true">✳</span> untukmu, Salma Yovena Ulilhaq♥♥</a>
+
+        <div class="topbar__actions">
+          <span class="topbar__date" id="today-label"></span>
+          <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Aktifkan musik" hidden>
+            <span class="music-toggle__icon" aria-hidden="true">♫</span>
+            <span class="music-toggle__label">musik mati</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="welcome-screen" id="welcome" aria-labelledby="welcome-title">
+          <div class="welcome-card">
+            <h1 id="welcome-title">Pake Website Waee Biar beda sama kamuuu<br />nihh yang <em>ada Surpresss kecil kecilan duluuu</em></h1>
+            <p class="welcome-card__copy">dibuat dengan hatikuuuuu ketulusan yang baik dan rajin menabung</p>
+            <button class="button button--primary" id="open-surprise" type="button">BUKAAAAA <span class="button__emoji" aria-hidden="true">↗</span></button>
+          </div>
+          <div class="welcome-screen__bottom"><span>HARI INI, KITA RAYAKAN KAMU</span><span>BUKA KEJUTAN UNTUK MELANJUTKAN</span></div>
+        </section>
+
+        <div class="birthday-content" id="birthday-content" inert>
+          <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+            <div class="hero__topline"><span>HARI INI HANYA TENTANG KAMU</span><span>HARI YANG SELALU DINANTI</span></div>
+            <div class="hero__copy">
+              <span class="eyebrow"><span class="eyebrow__dot"></span> HARI YANG LAYAK DIRAYAKAN</span>
+              <h2 id="hero-title">Selamat<br />ulang ke<em> 25 tahun.♡</em></h2>
+              <p class="hero__name" id="recipient-name">Untukmu, Salma Yovena Ulilhaq my Lopee♥♥ <span aria-hidden="true">✳</span></p>
+
+              <p class="hero__sub">Gak kerasa ya pacarku ini udah 25 tahun🤪</p>
+              <a class="button button--outline" href="#message">Baca surat kecilku <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="hero-art__orbit"></div>
+              <div class="hero-art__orbit hero-art__orbit--two"></div>
+              <div class="hero-art__cake">
+                <span class="hero-art__candle">✦</span>
+                <span class="hero-art__frosting">happy birthday</span>
+                <span class="hero-art__cake-base"></span>
+                <span class="hero-art__plate"></span>
+              </div>
+            </div>
+            <a class="scroll-cue" href="#message"><span class="scroll-cue__line"></span> SCROLL PELAN-PELAN</a>
+          </section>
+
+          <section class="message-section section-wrap" id="message" aria-labelledby="message-title">
+            <div class="section-heading reveal"><span class="section-index">01 / SEPOTONG DOA</span><span class="section-heading__rule"></span><span class="section-heading__icon" aria-hidden="true">✳</span></div>
+            <article class="message-card reveal">
+              <span class="message-card__quote" aria-hidden="true">“</span>
+              <div>
+                <p class="eyebrow eyebrow--dark">UNTUK BABAK BARU DALAM HIDUPMU</p>
+                <h2 id="message-title">Semoga tahun 25 ini<br />bisa <em>lebih baik</em></h2>
+                <p class="message-card__body" id="birthday-message">
+                  Semoga semua kerja keras, cita-cita, dan impian yang lagi kamu usahakan perlahan-lahan dibukakan jalannya dan tercapai satu per satu di waktu yang paling tepat. Tetap jadi Sayangku yang penyabar, penuh kasih sayang dan
+                  rajin menabung seperti yang aku kenal ya. Pokoke Selamat Ulang Tahun ya Sayangkuuu Cintakuuuuuuu🥰🥰
+                </p>
+                <span class="message-card__signoff">With Love♡♡ <span aria-hidden="true">♡</span></span>
+              </div>
+              <span class="message-card__flower" aria-hidden="true">✿</span>
+            </article>
+          </section>
+
+          <section class="cake-section section-wrap" id="wish" aria-labelledby="cake-title">
+            <div class="section-heading reveal"><span class="section-index">02 / BUAT PERMINTAAN</span><span class="section-heading__rule"></span><span class="section-heading__icon" aria-hidden="true">✳</span></div>
+            <div class="cake-panel reveal">
+              <div class="cake-panel__copy">
+                <span class="eyebrow eyebrow--dark">KATAKAN DALAM HATI</span>
+                <h2 id="cake-title">Make a <em>wish.</em></h2>
+                <p>Merem terus tiup pelan pelan. Semoga wishnmu yang baik akan terkabul.</p>
+                <button class="button button--primary" id="wish-button" type="button">Kirim permintaan <span aria-hidden="true">✦</span></button>
+                <span id="wish-status" class="cake-panel__status" aria-live="polite">3 lilin menunggu permintaanmu.</span>
+              </div>
+              <div class="interactive-cake" id="interactive-cake" role="group" aria-label="Kue ulang tahun dengan tiga lilin interaktif">
+                <div class="interactive-cake__candles">
+                  <button class="candle is-lit" type="button" aria-label="Tiup lilin pertama" aria-pressed="false"><span class="candle__flame"></span></button>
+                  <button class="candle is-lit" type="button" aria-label="Tiup lilin kedua" aria-pressed="false"><span class="candle__flame"></span></button>
+                  <button class="candle is-lit" type="button" aria-label="Tiup lilin ketiga" aria-pressed="false"><span class="candle__flame"></span></button>
+                </div>
+                <div class="interactive-cake__top"><span class="interactive-cake__drip"></span></div>
+                <div class="interactive-cake__middle"></div>
+                <div class="interactive-cake__bottom"></div>
+                <div class="interactive-cake__plate"></div>
+                <span class="interactive-cake__sprinkle" aria-hidden="true">✦ &nbsp; ✿ &nbsp; ✦</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="memories-section section-wrap" id="memories" aria-labelledby="memories-title">
+            <div class="section-heading reveal"><span class="section-index">03 / POTONGAN KENANGAN</span><span class="section-heading__rule"></span><span class="section-heading__icon" aria-hidden="true">✳</span></div>
+            <div class="memories-heading reveal">
+              <div>
+                <span class="eyebrow eyebrow--dark">Ada beberapa hal yang pernah kita lalui. lek kamu lali inget2 deweeee</span>
+                <h2 id="memories-title">Hal-hal yang <em>indah.</em></h2>
+              </div>
+              <p>Beberapa hal sederhana yang membuat hari-hari terasa lebih istimewa.</p>
+            </div>
+            <div class="photo-grid">
+              <figure class="photo-card photo-card--tall reveal">
+                <div class="photo-card__image photo-card__image--one" role="img" aria-label="Perayaan hangat penuh cahaya"></div>
+                <figcaption><span>01</span><span>Malam yang penuh cerita</span><span aria-hidden="true">✦</span></figcaption>
+              </figure>
+              <figure class="photo-card photo-card--offset reveal">
+                <div class="photo-card__image photo-card__image--two" role="img" aria-label="Bunga dan kenangan manis"></div>
+                <figcaption><span>02</span><span>Hal-hal yang kita syukuri</span><span aria-hidden="true">✦</span></figcaption>
+              </figure>
+              <figure class="photo-card reveal">
+                <div class="photo-card__image photo-card__image--three" role="img" aria-label="Langit senja yang berwarna merah muda"></div>
+                <figcaption><span>03</span><span>Sore yang tak terlupakan</span><span aria-hidden="true">✦</span></figcaption>
+              </figure>
+              <figure class="photo-card reveal">
+                <div class="photo-card__image" role="img" aria-label="Teman-teman menikmati waktu bersama"></div>
+                <figcaption><span>04</span><span>Waktu bersama orang tersayang</span><span aria-hidden="true">✦</span></figcaption>
+              </figure>
+              <figure class="photo-card photo-card--offset reveal">
+                <div class="photo-card__image" role="img" aria-label="Momen kebersamaan yang hangat"></div>
+                <figcaption><span>05</span><span>Tawa yang ingin diulang</span><span aria-hidden="true">✦</span></figcaption>
+              </figure>
+              <figure class="photo-card reveal">
+                <div class="photo-card__image" role="img" aria-label="Perayaan kecil bersama teman-teman"></div>
+                <figcaption><span>06</span><span>Cerita di hari yang cerah</span><span aria-hidden="true">✦</span></figcaption>
+              </figure>
+            </div>
+            <p class="photo-note">Masih banyak momen indah yang menanti di depan.</p>
+          </section>
+
+          <section class="surprise-section section-wrap" id="surprise" aria-labelledby="surprise-title">
+            <div class="surprise-card reveal">
+              <span class="eyebrow eyebrow--dark">SEKKK Ada Lagi</span>
+              <h2 id="surprise-title">Ini cuma hal kecil<br /><em>khusus buat kamu.</em></h2>
+              <p>Tidak ada petunjuk. Hanya sedikit rasa penasaran.</p>
+              <button class="button button--primary" id="secret-button" type="button">Buka pesan rahasia <span aria-hidden="true">↗</span></button>
+              <span class="surprise-card__stamp" aria-hidden="true">with<br />love ♡</span>
+            </div>
+          </section>
+
+          <section class="final-section section-wrap" id="final" aria-labelledby="final-title">
+            <span class="eyebrow eyebrow--dark">Sekali lagi. ahh sekali lagi muluuuuu</span>
+            <h2 id="final-title">Semoga hal-hal baik<br /><em>ada dijalanmu</em></h2>
+
+            <span class="final-section__signature">Happy birthday, Wish U All The Best! Loveyouu somuch <span aria-hidden="true">♥</span></span>
+            <a class="back-to-top" href="#top">KEMBALI KE ATAS <span aria-hidden="true">↑</span></a>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <span>DIRANGKAI DENGAN CINTA <span aria-hidden="true">♥</span></span
+        ><span>UNTUK HARI INI, DAN HARI-HARI SETELAHNYA</span>
+      </footer>
+
+      <div class="modal" id="secret-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <button class="modal__backdrop" type="button" data-close-modal aria-label="Tutup pesan"></button>
+        <article class="modal__card">
+          <button class="modal__close" type="button" data-close-modal aria-label="Tutup">×</button>
+          <span class="modal__icon" aria-hidden="true">💌</span>
+          <span class="eyebrow eyebrow--dark">DARI HATIKU, HANYA UNTUKMU THE ONE AND ONLY♥</span>
+          <h2 id="modal-title">Sekali Lagi<br /><em>happy birthday Salma Yovena Ulilhaq♥</em></h2>
+          <p>Semoga hari ini menjadi salah satu hari paling baik untukmu. Semoga semua doa baikmu ada jalane, capekmu ngadepin aku semoga menjadi berkah, dan semoga kita bisa tetap bersama diulangtahun kedepannya. Love you somuch! ❤️</p>
+          <button class="button button--primary" type="button" data-close-modal>Tutup dengan senyum <span aria-hidden="true">✦</span></button>
+        </article>
+      </div>
+      <div id="live-announcement" class="sr-only" aria-live="polite"></div>
+    </div>
+  </body>
+</html>
